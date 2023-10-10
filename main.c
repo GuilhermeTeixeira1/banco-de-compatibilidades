@@ -8,7 +8,7 @@
 #define Tamanho_Gosto_Musical 6
 #define Tamanho_Comida_Favorita 7
 #define Tamanho_Hobbies 7
-// teste
+
 /*
     fazer um banco de dados para consultar posteriormente e fazer um percentual de combinação entre um usuario e outro (mostrar o percentual)
     dados a serem cadastrados: nome, cidade, genero, numero, gostos musicais, hobbies, comida favorita
