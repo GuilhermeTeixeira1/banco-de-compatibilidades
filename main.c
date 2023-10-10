@@ -8,17 +8,17 @@
 #define Tamanho_Gosto_Musical 6
 #define Tamanho_Comida_Favorita 7
 #define Tamanho_Hobbies 7
-
+// teste
 /*
-    fazer um banco de dados para consultar posteriormente e fazer um percentual de combinação entre um usuario e outro (mostrar o percentual)
+    fazer um banco de dados para consultar posteriormente e fazer um percentual de combinaÃ§Ã£o entre um usuario e outro (mostrar o percentual)
     dados a serem cadastrados: nome, cidade, genero, numero, gostos musicais, hobbies, comida favorita
     gostos musicais = (funk, rock, pagode, rap, pop)
-    Hobbies: (academia, séries, esportes, viajar, videogame, procrastinar)
-    Comidas: (churrasco, pizza, sushi, hambúrger, macobronwie, brisadeiro)
+    Hobbies: (academia, sÃ©ries, esportes, viajar, videogame, procrastinar)
+    Comidas: (churrasco, pizza, sushi, hambÃºrger, macobronwie, brisadeiro)
 
 */
 
-   // STRUCTS E FUNÇÕES
+   // STRUCTS E FUNÃ‡Ã•ES
     typedef struct{
         char NomeSobrenome[50], cidade[20];
         int GostoMusical[Tamanho_Gosto_Musical], hobbies[Tamanho_Hobbies], ComidaFavorita[Tamanho_Comida_Favorita], idade, sexo;
@@ -149,7 +149,7 @@
             fflush(stdin);
             scanf("%i", &item);
 
-            while(item > 5 || item < 0){ // proteção anti burro
+            while(item > 5 || item < 0){ // proteÃ§Ã£o anti burro
                 system("cls");
 
                 printf("numero digitado invalido, tente denovo:\n");
@@ -193,7 +193,7 @@
             fflush(stdin);
             scanf("%i", &item);
 
-            while (item > 6 || item < 0){ // proteção anti burro
+            while (item > 6 || item < 0){ // proteÃ§Ã£o anti burro
                 system("cls");
 
                 printf("numero digitado invalido, tente denovo:\n");
@@ -238,7 +238,7 @@
             fflush(stdin);
             scanf("%i", &item);
 
-            while (item > 6 || item < 0){ // proteção anti burro
+            while (item > 6 || item < 0){ // proteÃ§Ã£o anti burro
                 system("cls");
 
                 printf("numero digitado invalido, tente denovo:\n");
@@ -274,7 +274,7 @@
     void Escrever_Arquivo(FILE *arquivo, FichaCadrastro pessoa){
         int Num_pessoas, offset = 8, Tamanho_Struct = sizeof(pessoa);
 
-        // posionando no começo do arquivo
+        // posionando no comeÃ§o do arquivo
         rewind(arquivo);
 
         // vendo o num de pessoas registradas
@@ -686,7 +686,7 @@
                     fflush(stdin);
                     scanf("%i", &item);
 
-                    while (item > 5 || item < 0){ // proteção anti burro
+                    while (item > 5 || item < 0){ // proteÃ§Ã£o anti burro
                         system("cls");
 
                         printf("numero invalido, tente denovo\n");
@@ -746,7 +746,7 @@
                     fflush(stdin);
                     scanf("%i", &item);
 
-                    while (item > 6 || item < 0){ // proteção anti burro
+                    while (item > 6 || item < 0){ // proteÃ§Ã£o anti burro
                         system("cls");
 
                         printf("numero invalido, tente denovo\n");
@@ -805,7 +805,7 @@
                     fflush(stdin);
                     scanf("%i", &item);
 
-                    while (item > 6 || item < 0){ // proteção anti burro
+                    while (item > 6 || item < 0){ // proteÃ§Ã£o anti burro
                         system("cls");
 
                         printf("numero invalido, tente denovo\n");
@@ -886,7 +886,7 @@
     // MAIN
 int main()
 {
-    // declarando variaveis, funções
+    // declarando variaveis, funÃ§Ãµes
     int opcao;
     FILE *arquivo;
     FichaCadrastro pessoa;
@@ -940,7 +940,7 @@ int main()
     return 0;
 }
 
-// essa é a função caso tenha que resetar o arquivo do 0
+// essa Ã© a funÃ§Ã£o caso tenha que resetar o arquivo do 0
 /*
             Conserta_Cagada_Arquivo(arquivo);
             fclose(arquivo);
