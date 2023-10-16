@@ -1,11 +1,10 @@
-# banco de compatibilidades
- projeto onde o usuario pode se cadastrar, analisar as compatibilidades do banco e filtrar ele por alguma caracteristica. Foi programado em C na plataforma codeblocks, o intuito do projeto era manipular arquivos e banco de dados. O banco está salvo em binario no arquivo "tinder.txt".
+projeto onde o usuário pode se cadastrar em um banco de dados, analisar as compatibilidades das pessoas cadastradas e filtrar ele por alguma característica. Foi programado em C na plataforma CodeBlocks. O intuito do projeto é manipular arquivos e banco de dados. O banco está salvo em binário no arquivo "tinder.txt".
  
  COMO FUNCIONA CADA OPÇÃO?
  
- - cadastrar-se: o usuario recebera varias perguntas tendo varias possibilidades de escolhas, depois de ter escolhido tudo, volta para a tela de inicio automatcamente
+ - Cadastrar-se: o usuário receberá várias perguntas tendo algumas possibilidades de escolhas. depois de ter escolhido tudo, volta para a tela de início automatcamente.
 
- - analisar compatibilidades: ao clicar, aparece uma lista completa com todos os usuarios sendo comparado com todos os usuarios, sendo que o nome da esquerda é a pessoa que esta sendo analisada, e a da direita sendo o objeto usado para tirar a conclusão do percentual de acertos entre os 2
+ - Analisar compatibilidades: ao clicar, aparece uma lista completa com a ánalise de todos usuários com os outros, sendo que o nome da esquerda é a pessoa que está sendo analisada, já a da direita sendo o objeto usado para tirar a conclusão do percentual de acertos entre os 2. // parei aqui
 
  - filtrar: aparece um menu onde tem todos os itens que podem ser usados como critério para filtro, depois de escolher, mostra a ficha inteira dos usuarios que batem com o que foi pedido
 
