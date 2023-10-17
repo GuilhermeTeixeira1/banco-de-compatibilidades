@@ -4,16 +4,16 @@ projeto onde o usuário pode se cadastrar em um banco de dados, analisar as comp
  
  - Cadastrar-se: o usuário receberá várias perguntas tendo algumas possibilidades de escolhas. depois de ter escolhido tudo, volta para a tela de início automatcamente.
 
- - Analisar compatibilidades: ao clicar, aparece uma lista completa com a ánalise de todos usuários com os outros, sendo que o nome da esquerda é a pessoa que está sendo analisada, já a da direita sendo o objeto usado para tirar a conclusão do percentual de acertos entre os 2. // parei aqui
+ - Analisar compatibilidades: ao clicar, aparece uma lista completa com a ánalise de todos usuários com os outros, sendo que o nome da esquerda é a pessoa que está sendo analisada, já a da direita, o objeto usado para calcular o percentual de acertos entre os 2.
 
- - filtrar: aparece um menu onde tem todos os itens que podem ser usados como critério para filtro, depois de escolher, mostra a ficha inteira dos usuarios que batem com o que foi pedido
+ - Filtrar: aparece um menu onde há todos os itens que podem ser usados como critério para filtro, depois de escolher, mostra a ficha inteira dos usuários que coincidem com o que foi escolhido.
 
-EXPLICAÇÃO DA LINHA DE RACICIONO E MOSTRANDO COMO FOI FEITO O CODIGO:
-- tela inicial:
-  a tela inicial consiste basicamente em um monte de mensagens na tela usando "printf" (estão todos na função "Exibir_Menus"). Nesse menu inicial, tenho que mostrar para o usuario as possibilidades que ele pode escolher.
-  todo essa tela esta em um loop usando "do while" que só é rompido quando o usuario escolhe a opção de sair do programa.
+EXPLICAÇÃO DA LINHA DE RACICÍONO E MOSTRANDO COMO FOI FEITO O CODIGO:
+- Tela inicial:
+  A tela inicial consiste basicamente em 3 opções (são as mesmas citadas a cima), para o usuário escolher (foi usado "printf" e estão todos contidos na função "Exibir_Menu"). Nesse menu inicial, é mostrado ao usuário as possibilidades de escolha.
+  Todo essa tela esta em um loop usando "do while", que só é quebrado quando o usuário escolher a opção de sair do programa.
 
-- cadastrar-se:
+- Cadastrar-se: // parei aqui
 quando o usuario escolhe 1 no menu, esse valor é armazenado na variavel "opcao" que vai para um switch case, assim, executando o case 1. São 2 funções, a "cadastrar" e a "Escrever_Arquivo". Primeiro executa o "cadastrar" que cria uma struct que irá receber vários dados do usuario conforme ele respondende o questionario na tela. Quando terminar o cadastro, a função devolve essa struct que esta definida do tipo "FichaCadastro" na variavel "pessoa".
 
 Depois, executa o "Escrever_Arquivo" onde ele recebe a strutc "pessoa" e o ponteiro do arquivo, depois abre o arquivo txt que irá ser o meu banco de dados, nele já foi colocado 2 variaveis previamente que só atualizam de valor conforme o codigo, elas servem para saber o número de pessoas cadastras e o offset em bytes para começar as infos de cada usuario. Logo após, é armazenado a struct em binario, encrementa a variavel de controle do nuemro de pessoas cadastras e se fecha o arquivo.
